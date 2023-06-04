@@ -1,0 +1,53 @@
+#boton-intento {
+            background-color: green;
+            color: white;
+            font-size: 1.8rem;
+            padding: 4% 5%;
+            border: none;
+            border-radius: 5px;
+            margin-top: 0%;
+        }
+
+        .container {
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 60vh;
+            position: relative;
+            
+        }
+
+        video {
+            height: auto;
+            width: 40%;
+            object-fit: cover;
+            padding-bottom: 1%;
+            z-index: 1; 
+        }
+
+        #titulo2 {
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        canvas {
+            position: absolute!important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+}

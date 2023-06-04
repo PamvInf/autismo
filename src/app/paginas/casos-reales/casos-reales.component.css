@@ -1,0 +1,47 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Agregamos esta línea para establecer la dirección en columnas */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  
+  .boldText{
+    font-weight: bold;
+}
+
+#situationImage{
+    align-items: center;
+    
+    max-width: 60vh;
+    max-height: 40vh; 
+    
+}
+  
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 50%;
+    background-color: lightgray;
+    position: relative;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+  }
+  
+  .option img {
+    max-width: 100%;
+  }
+  

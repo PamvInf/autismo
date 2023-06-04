@@ -1,0 +1,17 @@
+<div id="principal">
+  <section>
+    <h1>Aprendiendo las emociones</h1>
+
+    <div class="container">
+      <div class="dropzone" id="" cdkDropList (cdkDropListDropped)="drop($event)">
+        <p id="emocion"></p>
+        <img id="draggedImage">
+      </div>
+      <div class="options" cdkDropList [cdkDropListData]="options" (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let option of options" class="option" cdkDrag [cdkDragData]="option">
+          <img src="{{ option.href }}" alt="{{ option.value }}">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

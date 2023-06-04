@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="example-toolbar">
+	<button mat-icon-button (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+	<h1 class="example-app-name">iAutismo</h1>
+  <span class="example-spacer"></span>
+  <a class="login" [routerLink]="['/login']">Login</a>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav id="sidenav" mode="side" opened="false">
+    <mat-nav-list>
+      <mat-list-item>
+        <a mat-list-item routerLink="/emocionesBasicas">Emociones básicas</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item routerLink="/reconocimientoEmociones">Reconocimiento de emociones</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a mat-list-item routerLink="casosReales">Casos reales</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <a mat-list-item routerLink="/estadisticas">    <span class="icon"> <mat-icon>area_chart</mat-icon></span>
+          Estadísticas</a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <a mat-list-item>  <span class="icon">  <mat-icon>settings</mat-icon></span>
+          Ajustes</a>
+      </mat-list-item>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <div id="router-outlet">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-sidenav-container>
+

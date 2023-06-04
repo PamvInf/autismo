@@ -1,0 +1,17 @@
+<div id="principal">
+    <section>
+      
+  
+      <div id="overlay" class="container">
+        <div class="image-container">
+            <h1 id="situacion"></h1>
+          <img id="situationImage" src="/img/situaciones/{{ situationImage }}" alt="Imagen de situación">
+        </div>
+        <div class="options">
+          <div *ngFor="let option of options" class="option" (click)="checkAnswer(option.value)">
+            <img src="{{ option.href }}" alt="{{ option.value }}">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

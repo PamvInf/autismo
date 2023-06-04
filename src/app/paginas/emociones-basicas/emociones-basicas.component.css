@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Agregamos esta línea para establecer la dirección en columnas */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .boldText{
+    font-weight: bold;
+}
+
+.dropzone.incorrect {
+    background-color: red;
+    transition: background-color 1s ease;
+  }
+  
+
+.dropped {
+    display: none;
+  }
+  .dropzone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vh;
+    height: 45vh;
+    background-color: #c7eec7;
+    margin-right: 10px;
+    z-index: 1;
+    margin-bottom: 1%;
+    position: relative; /* Needed to position the image inside the dropzone */
+  }
+
+  #draggedImage {
+    display: none;
+    position: absolute; /* Position the image inside the dropzone */
+    top: 0;
+    left: 0;
+  }
+  
+  .dropzone p {
+    font-size: 24px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 50%;
+    background-color: lightgray;
+    position: relative;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+  }
+  
+  .option img {
+    max-width: 100%;
+  }
+  

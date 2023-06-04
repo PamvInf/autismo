@@ -1,0 +1,25 @@
+#sidenav {
+  width: 15%;
+  background-color: aliceblue;
+}
+
+.icon {
+  margin-right: 0.25rem;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+a.login {
+  font-size: 1rem;
+  color: #FFF;
+  padding-right: 2rem;
+}
+
+a.login:visited {
+  color: rgb(238, 157, 7);
+}
+
+#router-outlet {
+  padding: 2rem;
+}
+
